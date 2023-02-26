@@ -2,10 +2,10 @@
 Microservice Project For Jonathan's Group Project
 
 ## Requesting Data
-Once the microservice has been turned on and going into standby mode, as put into the microservice-test file, the way that you request data from the microservice is after filling out the entered files into the main.py terminal (will replace this with jonathan's program), and the array get's sent out over to the microservice program.
+The user will edit the sample_data.csv file to fit their estimates, then send the arrays related to the csv file to the server as a message. The server will then process the message into a new array to be compared with it's own recorded efforts. The messages are sent over to the server using the RabbitMQ message broker AMQP.
 
 ## Recieving Data
-The way that you recieve data from the program will be from the text file, after the microservice reads through the array given by the main program, it will send out correct or incorrect depending on if it finds a effort amount entered into the main program or read by the csv file that doesn't match with the values of the Group_Estimate_Example.csv file.
+After comparing the group efforts of both csv files, the server will return the result. If the server finds no errors when comparing the two efforts the server will return "correct". In the case the server finds a different group effort for the feature, the server will return "incorrect" along with the different feature ID's and group associated with the incident and the entered in effort, where it will let the client know if the effort was higher or lower than expected.
 
 ## UML Sequence Diagram
 ![Alt text](https://raw.githubusercontent.com/andrew-sabin/Microservice_Group_Project/main/UML%20Screenshot.PNG "UML for microservice")
