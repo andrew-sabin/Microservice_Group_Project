@@ -1,0 +1,6 @@
+Feature_ID,Title,Effort,Group_1,Group_2,Group_3,Group_4,Calculated_Total
+16274,Feature #1 Description,17,3,0,5,5,17
+86482,Feature #2 Description,10,2.5,2.5,3.5,2.5,10
+67452,Feature #3 Description,5,1,2,4,0,7
+77716,Feature #4 Description,2,2,0,0,0,2
+99122,Feature #5 Description,50,15,26,5,4,50
